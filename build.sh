@@ -26,7 +26,7 @@ function package() {
 
 
 function run() {
-	package && java -Xdebug -Xrunjdwp:transport=dt_socket,address=5000,server=y,suspend=n -jar target/cas-management.war 
+	package && java -Xdebug -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=n -jar target/cas-management.war 
 }
 
 if [ $# -eq 0 ]; then
